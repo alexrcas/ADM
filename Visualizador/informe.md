@@ -13,12 +13,14 @@ En la práctica anterior se entregó un proyecto hecho completamente en *NodeJS*
 Se optó por rediseñar y reimplementar el proyecto desde cero teniendo en mente a largo plazo los objetivos anteriores. El proyecto consta de lo que se podría ver como el "motor", hecho íntegramente en *Python* y de un visor web hecho en *NodeJS*. El visor web se limita únicamente a representar los datos, estando ambos componentes totalmente desacoplados y comunicándose a través de la API del motor de Python. 
 
 Un programador externo podría conectarse a esta API y utilizar el motor para computar grandes cantidades de datos, trayendo al visor únicamente aquellos que desea representar. La arquitectura del proyecto queda así definida por el siguiente diagrama:
+
 ![](https://i.ibb.co/mSw59X0/Dibujo-sin-t-tulo.png)
 
 #### Diagrama de clases
 En este apartado nos centraremos en el componente de *Python* ya que es el principal. El visor no es más que un servidor web con una página básica que utiliza una librería de *Javascript* para representar los datos. Los clientes se conectan a este visor, que podría haber sido creado por un programador completamente ajeno al proyecto que utiliza la API que ofrece el "motor".
 
 A continuación se expone el diagrama que describe el "motor de datos" junto con la explicación de su funcionamiento y flujo de trabajo:
+
 ![](https://i.ibb.co/VmMj48w/Python-Core.png)
 
 #### Api
