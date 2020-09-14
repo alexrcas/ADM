@@ -1,0 +1,9 @@
+MAPA
+https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json
+https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv
+
+TIMESERIES
+https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/nacional_covid19.csv
+
+NORMAL
+https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_camas_uci_2017.csv

@@ -1,0 +1,18 @@
+<div class="container-fluid mt-3">
+    <div class="d-flex">
+        <div class="row">
+            <div class="form-row ml-2">
+                <input id="input-url" type="text" class="form-control col col-xs-8" placeholder="URL...">
+                <button id="btn-load" class="btn btn-success">Cargar</button>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-2 border">
+            {% include 'menu.html' %}
+        </div>
+        <div class="col-10 border test">
+            {{ plot_div }}
+        </div>
+    </div>
+</div>

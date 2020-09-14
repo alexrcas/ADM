@@ -1,0 +1,36 @@
+<form action="/plot" method="POST">
+
+    Tipo
+    <select name="type" class="form-control" id="select-type">
+        <option value="bar">Barras</option>
+        <option value="line">Líneas</option>
+        <option value="scatter">Dispersión</option>
+    </select>
+
+    <div class="x-panel">
+    X
+    <select name="x" class="form-control" id="select-x">
+        {% for field in savedData.fields %}
+            <option value="{{ field }}">{{ field }}</option>
+        {% endfor %}
+    </select>
+
+    </div>
+
+    <div class="y-panel">
+    Y
+    <select name="y" class="form-control" id="select-y">
+    {% for field in savedData.fields %}
+        <option value="{{ field }}">{{ field }}</option>
+    {% endfor %}
+    </select>
+    </div>
+
+
+{% if savedData is defined %}
+<button id="btn-send" class="btn btn-primary">Send</button>
+{% else %}
+<button id="btn-send" class="btn btn-primary" disabled>Send</button>
+{% endif %}
+
+</form>
