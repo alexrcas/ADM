@@ -28,9 +28,18 @@
 
 
 {% if savedData is defined %}
-<button id="btn-send" class="btn btn-primary">Send</button>
+<button id="btn-send" class="btn btn-primary">Mostrar</button>
 {% else %}
-<button id="btn-send" class="btn btn-primary" disabled>Send</button>
+<button id="btn-send" class="btn btn-primary" disabled>Mostrar</button>
 {% endif %}
+</form>
 
+<div class="timeSeries">
+    Serie temporal detectada
+    <button id="btn-hist" class="btn btn-primary"> Ver histograma</button>
+</form>
+</div>
+
+<form action="/map" method="POST">
+    <button class="mt-3 btn btn-primary">Ver mapa</button>
 </form>

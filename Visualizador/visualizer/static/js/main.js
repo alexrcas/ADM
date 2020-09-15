@@ -1,3 +1,5 @@
+$('.timeSeries').hide();
+
 $('#btn-load').on('click', () => {
     let val = $('#input-url').val()
     fetch(`/data`, {
@@ -26,11 +28,25 @@ $('#btn-load').on('click', () => {
         console.log(res.timeSeries)
         if (res.timeSeries == true) {
             $('.x-panel').hide()
-            $('.y-panel').hide()
+            $('.y-panel').show()
+            $('.timeSeries').show();
         }
         else {
             $('.x-panel').show()
             $('.y-panel').show()
+            $('.timeSeries').hide();
+
         }
+    })
+})
+
+$('#btn-hist').on('click', () => {
+    data = {'url': $('#input-url').val(), 'y': $('#select-y').val()}
+    $.ajax({
+        url: '/distribution',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify(data),
+        success: res => {document.write(res)}
     })
 })

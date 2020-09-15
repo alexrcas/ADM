@@ -31,6 +31,7 @@ def plot():
         df = parser.getData()
         fig = getattr(px, request.form['type'])(df, x ='fecha', y = df.columns)
         p = plotly.offline.plot(fig, include_plotlyjs=False, output_type='div')
+        print('TIME SERIES')
         return render_template('index.html', plot_div = Markup(p), timeSeries = True, savedData = savedData)
     else:
         df = parser.getData()
@@ -41,10 +42,14 @@ def plot():
 
 @app.route('/distribution', methods = ['POST'])
 def distribution():
+    url = request.get_json()
+    parser.loadData(url['url'])
+    y = url['y']
     df = parser.getData()
-    fig = getattr(px, request.form['type'])(df, x ='fecha', y = df.columns)
+    #fig = getattr(px, histogram)(df, x ='fecha', y = df.columns)
+    fig = px.histogram(df, x='fecha', y=y)
     p = plotly.offline.plot(fig, include_plotlyjs=False, output_type='div')
-    return render_template('index.html', plot_div = Markup(p))
+    return render_template('index.html', plot_div = Markup(p), savedData = '')
 
 
 @app.route('/map', methods = ['post'])
@@ -63,7 +68,7 @@ def map():
                             )
     
     p = plotly.offline.plot(fig, include_plotlyjs=False, output_type='div')
-    return render_template('index.html', plot_div = Markup(p))
+    return render_template('index.html', plot_div = Markup(p), savedData= "")
     
 
 
@@ -71,8 +76,7 @@ def map():
 def data():
     r = request.get_json()
     parser.loadData(r['url'])
-    print(parser.headers())
     return jsonify({'headers': parser.headers(), 'timeSeries': parser.timeSeries()})
 
 
-app.run(debug = True, port = 3000)
+app.run(debug = True, port = 3005)
