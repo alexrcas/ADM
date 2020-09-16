@@ -8,6 +8,8 @@ from sklearn import preprocessing, svm
 from sklearn.model_selection import train_test_split
 from matplotlib import style
 from sklearn.datasets import load_boston
+from sklearn.ensemble import RandomForestRegressor
+
 boston = load_boston()
 
 
@@ -35,4 +37,15 @@ resta = np.mean(y_test - predict)
 plt.scatter(y_test, predict)
 plt.xlabel("Precios")
 plt.ylabel("Precios Predecidos")
+plt.show()
+
+
+
+# Random forest
+reg = RandomForestRegressor()
+reg.fit(X_train, y_train)
+y_pred = reg.predict(X_train)
+plt.scatter(y_train, y_pred)
+plt.xlabel("Precios")
+plt.ylabel("Precios predecidos")
 plt.show()
