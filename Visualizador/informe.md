@@ -1,9 +1,28 @@
 # Análisis de datos masivos
-## Práctica Visualizació
+## Práctica Visualización
 Alexis Rodríguez Casañas
 
 ### 1. Conclusiones sobre el artículo propuesto para lectura
-En elaboración
+El artículo trata sobre la importancia de la calidad de las representaciones de datos en el ámbito científico. Por un lado, los artistas gráficos suelen
+hacer muy buenas representaciones aunque matemáticamente muchas de ellas son erróneas. Por otro, los científicos hacen representaciones muy precisas, pero
+carecen del componente artístico que hace que la representación sea visualmente adecuada y muy agradable.
+
+Por ejemplo, el tipo de gráfico es importante. Según estudios, la gente es mucho más hábil detectando diferencias de medidas simples, como la altura de
+dos barras, que otras formas de representación basadas en colores, formas o ángulos, por ello, las gráficas basadas en este primer método son las más
+eficaces siempre que los datos lo permitan.
+
+Respecto a los famosos diagramas de pastel, pueden parecer atractivos, pero la realidad es que cuando aparecen más de dos o tres variables es muy complicado
+visualizar lo que se pretende expresar y suponen un verdadero reto para el lector. Un diagrama de barras, aunque visualmente más simple, es muchísimo más
+efectivo.
+
+Para el uso de calores como en el caso de los mapas de calor, en realidad es más efectiva la escala de grises. Un mapa de calor puede resultar visualmente
+atractivo pero, ¿qué color representa un valor mayor? En realidad, supone un gran ejercicio mental. Sin embargo, algo muy sencillo y que hacemos de manera
+natural es observar qué región es más oscura que otra. Un diagrama de mapa de calor en escala de grises puede no parecer tan atractvio, pero en realidad,
+es la forma más efectiva de comunicar la información frente al mapa de calor clásico.
+
+En definitiva, con el auge del big data, las representaciones de datos serán cada vez más frecuentes y más complejas, por lo que los científicos deberían 
+ser conscientes de la importancia de elaborar representaciones de calidad y dedicar parte de su tiempo a desarrollar su lado artístico.
+
 
 ### 2. Actualización del visor de datos
 #### Antecedentes
