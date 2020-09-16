@@ -1,5 +1,5 @@
 # Análisis de datos masivos
-## Práctica Visualización II
+## Práctica Visualizació
 Alexis Rodríguez Casañas
 
 ### 1. Conclusiones sobre el artículo propuesto para lectura
@@ -35,3 +35,16 @@ La clase NormData es muy sencilla pero de vital importancia. Representa un conju
 El hecho de acabar con los datos contenidos en un dataframe de *Pandas* es importante, porque esta librería fue creada precisamente para la ciencia de datos, por lo que su rendimiento es óptimo y ofrece al programador justo lo que necesita, facilitando su trabajo.
 
 Fuere cual fuere el origen de los datos, el componente *engine* siempre termina obteniendo un dataframe de *Pandas*, ya que esto es responsabilidad de las estrategias. Esto hace que el código sea genérico y muy simple, y al tener los datos contenidos en un objeto de *Pandas*, estamos listos para trabajar con ellos, haciendo con muy poco esfuerzo toda clase de operaciones de forma inmediata y con el máximo rendimiento.
+
+
+### Distribuciones
+Para representar distribuciones (histogramas) basta con llamar a la función adecuada en el código fuente. Esto no tiene especial dificultad, ya que
+únicamente se trata de una función que ya nos proporciona la librería Plotly igual que con el resto de gráficas.
+![](https://i.ibb.co/9ycf51j/image.png)
+
+### Mapas
+Los mapas no son mucho más complicados que el resto de funciones y su única dificultad radica en encontrar los datos. Para crear un mapa necesitamos dos cosas:
+1. Un fichero GeoJSON con la información de cada región que queramos colorear.
+2. Un fichero con los datos en sí, que referencie al ID de cada región en el GeoJSON.
+De resto, Plotly hace todo por nosotros.
+![](https://i.ibb.co/Ny4PrZk/image.png)
