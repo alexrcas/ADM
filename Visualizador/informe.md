@@ -67,3 +67,12 @@ Los mapas no son mucho más complicados que el resto de funciones y su única di
 2. Un fichero con los datos en sí, que referencie al ID de cada región en el GeoJSON.
 De resto, Plotly hace todo por nosotros.
 ![](https://i.ibb.co/Ny4PrZk/image.png)
+
+## Utilizando Sci-kit learn
+
+Se ha probado la librería de sci-kit learn para predecir el precio de las casas de Boston. En este caso se muestra el resultado de utilizar regresión lineal.
+La siguiente imagen describe como el precio se incrementa de acuerdo al número de habitaciones
+![](https://i.ibb.co/D5ycWZX/image.png)
+
+En la siguiente imagen, podemos ver el resultado de la predicción utilizando regresión lineal:
+![](https://i.ibb.co/6mD9gZj/image.png)
