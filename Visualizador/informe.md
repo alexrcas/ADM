@@ -76,3 +76,14 @@ La siguiente imagen describe como el precio se incrementa de acuerdo al número 
 
 En la siguiente imagen, podemos ver el resultado de la predicción utilizando regresión lineal:
 ![](https://i.ibb.co/6mD9gZj/image.png)
+
+Utilizando Random Forest
+![](https://i.ibb.co/BK4NnG8/image.png)
+Como se puede observar, este último es considerablemente más preciso
+
+## Conclusión
+En general, el transcurso de estas prácticas me ha resultado interesante porque es una rama de conocimiento que apenas había trabajado. Además, el tratamiento
+de datos está cobrando cada vez más importancia debido a la enorme cantidad de información que la humanidad está generando. Como bien establecia uno de los
+primeros artículos leídos en la asignatura, creo que es por ello de vital importancia que las personas que trabajamos en las ramas científicas no olvidemos
+ese cierto componente visual o artístico, para utilizar las mejores herramientas de ambos mundos y ofrecer datos precisos y de calidad, pero también
+visualmente efectivos.
